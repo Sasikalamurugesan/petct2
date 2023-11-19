@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://sasikalam21it:Gd4CeQAoYntoLIBi@cluster0.2tw6imi.
 app.use(bodyParser.json());
 const cors = require('cors');
 const corsOptions = {
-  origin: 'http://localhost:3000', 
+  origin: 'http://localhost:10000', 
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 };
@@ -295,7 +295,7 @@ app.get('/Payment',(req,res)=>{
 
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

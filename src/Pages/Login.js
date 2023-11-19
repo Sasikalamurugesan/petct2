@@ -19,7 +19,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch('/coachlog', {
+      const response = await fetch('https://petbackend-7p9w.onrender.com/coachlog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

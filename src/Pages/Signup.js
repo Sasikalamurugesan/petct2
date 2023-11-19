@@ -84,7 +84,7 @@ const Signup = () => {
       alert('Please fill in all fields');
     } else {
       try {
-        const response = await fetch('/signup', {
+        const response = await fetch('https://petbackend-7p9w.onrender.com/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
